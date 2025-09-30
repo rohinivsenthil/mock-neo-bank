@@ -51,7 +51,7 @@ select {
   border: none;
   border-bottom: 1px solid #334155;
   border-radius: 0;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #000000;
   font-size: 0.875rem;
   text-align: left;
@@ -63,6 +63,22 @@ select:focus {
   outline: none;
   border-bottom-color: #474973;
   box-shadow: none;
+  background-color: transparent !important;
+}
+
+input:active,
+select:active {
+  background-color: transparent !important;
+}
+
+input::selection {
+  background-color: rgba(71, 73, 115, 0.3);
+  color: #000000;
+}
+
+input::-moz-selection {
+  background-color: rgba(71, 73, 115, 0.3);
+  color: #000000;
 }
 
 select option {

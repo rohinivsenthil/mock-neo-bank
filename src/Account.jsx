@@ -15,7 +15,6 @@ function Account() {
   }, [location.state]);
 
   const handleViewDetails = () => {
-    navigate('/account/details'); // Replace with the actual route for account details
   };
 
   const handleCreateCard = () => {
@@ -23,7 +22,7 @@ function Account() {
   };
 
   const handleViewCard = () => {
-    navigate('/card/view'); // Replace with the actual route for viewing the card
+    
   };
 
   return (

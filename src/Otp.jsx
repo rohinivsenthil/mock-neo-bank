@@ -19,8 +19,8 @@ function Otp() {
             <input type="text" id="otp" name="otp" maxLength="6" required />
           </div>
           <div className="button-group">
-            <button type="submit" className="submit-button">Submit</button>
             <button type="button" className="submit-button">Resend</button>
+            <button type="submit" className="submit-button">Submit</button>
           </div>
         </form>
       </header>
