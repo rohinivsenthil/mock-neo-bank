@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #A69CAC;
+  color: #f8fafc;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.kyc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.kyc-button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #474973;
+  color: #f8fafc;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #4b5563;
+}
+
+.kyc-button:hover {
+  background-color: #161B33;
+  transform: translateY(-1px);
+}
+
+.kyc-button.done {
+  background-color: #10b981;
+  border-color: #059669;
+  color: #ffffff;
+}
+
+.kyc-button.done:hover {
+  background-color: #059669;
+}
+
+.continue-button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #474973;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.continue-button:hover:not(:disabled) {
+  background-color: #a6a6a6;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.continue-button:disabled {
+  background-color: #a2a3a4;
+  color: #5f6164;
+  cursor: not-allowed;
+  transform: none;
+}
